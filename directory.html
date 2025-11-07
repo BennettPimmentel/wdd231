@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Directory | Lima Chamber of Commerce</title>
+  <meta name="description" content="Directory of businesses and organizations in Lima, Peru. Support local entrepreneurs." />
+  <meta name="author" content="Bennett Scott" />
+
+  <meta property="og:title" content="Lima Chamber Directory" />
+  <meta property="og:description" content="Discover local businesses in Lima." />
+  <meta property="og:image" content="images/chosica-social.jpg" />
+  <meta property="og:url" content="https://username.github.io/wdd231/chamber/directory.html" />
+  <link rel="icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/base.css" />
+</head>
+<body>
+  <header>
+    <h1>Lima Chamber of Commerce</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html" class="active">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Member Directory</h2>
+
+    <div class="view-buttons">
+      <button id="gridView" class="active">Grid View</button>
+      <button id="listView">List View</button>
+    </div>
+
+    <section id="directoryContainer" class="grid" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <div class="footer-info">
+      <strong>Lima Chamber of Commerce</strong><br/>
+      Av. José Pardo 123, Lima, Perú<br/>
+      Email: info@limachamber.org | Phone: +51 1 234-5678
+    </div>
+    <div class="project-info">
+      <div>WDD 231 Project — Bennett Scott</div>
+      <div>© <span id="currentYear"></span> Lima Chamber of Commerce</div>
+      <div id="lastModified"></div>
+    </div>
+  </footer>
+
+  <script src="scripts/directory.js" defer></script>
+</body>
+</html>

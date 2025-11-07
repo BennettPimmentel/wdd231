@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Panadería Central",
+    "address": "Jr. Junín 123, Lima",
+    "phone": "+51 1 234-0001",
+    "website": "https://panaderiacentral.pe",
+    "image": "images/empresas/panaderia.jpg",
+    "membership": 3,
+    "description": "Traditional breads and pastries."
+  },
+  {
+    "name": "Café Miraflores",
+    "address": "Av. Larco 456, Miraflores",
+    "phone": "+51 1 234-0002",
+    "website": "https://cafemiraflores.pe",
+    "image": "images/empresas/cafe.jpg",
+    "membership": 2,
+    "description": "Specialty coffee and light meals."
+  },
+  {
+    "name": "Soluciones IT Lima",
+    "address": "Calle Los Olivos 78, Lima",
+    "phone": "+51 1 234-0003",
+    "website": "https://solucionesit.pe",
+    "image": "images/empresas/it.jpg",
+    "membership": 3,
+    "description": "IT support for small businesses."
+  },
+  {
+    "name": "Andes Travel",
+    "address": "Plaza San Martín 10, Lima",
+    "phone": "+51 1 234-0004",
+    "website": "https://andestravel.pe",
+    "image": "images/empresas/travel.jpg",
+    "membership": 2,
+    "description": "Tours around Peru."
+  },
+  {
+    "name": "Green Market",
+    "address": "Av. Arequipa 200, Lima",
+    "phone": "+51 1 234-0005",
+    "website": "https://greenmarket.pe",
+    "image": "images/empresas/market.jpg",
+    "membership": 1,
+    "description": "Organic produce and groceries."
+  },
+  {
+    "name": "Hotel Sol Lima",
+    "address": "Av. Grau 77, Lima",
+    "phone": "+51 1 234-0006",
+    "website": "https://hotelsollima.pe",
+    "image": "images/empresas/hotel.jpg",
+    "membership": 3,
+    "description": "Comfortable stays in central Lima."
+  },
+  {
+    "name": "Farmacia Central",
+    "address": "Jr. Puno 45, Lima",
+    "phone": "+51 1 234-0007",
+    "website": "https://farmaciacentral.pe",
+    "image": "images/empresas/pharmacy.jpg",
+    "membership": 1,
+    "description": "Medicines and health products."
+  }
+]
