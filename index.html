@@ -4,8 +4,18 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chosica Chamber of Commerce</title>
+  <meta name="description" content="Official website of the Chosica Chamber of Commerce. Promoting local businesses and community development.">
+  <meta name="author" content="Bennett Scott">
+
+  <meta property="og:title" content="Chosica Chamber of Commerce" />
+  <meta property="og:description" content="Connect with local businesses and discover what Chosica has to offer." />
+  <meta property="og:image" content="images/chosica-social.jpg" />
+  <meta property="og:url" content="https://Bennettpimmentel.github.io/wdd231/chamber/index.html" />
+
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <header>
     <div class="logo">
@@ -13,8 +23,8 @@
     </div>
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Directory</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
         <li><a href="#">Join</a></li>
         <li><a href="#">Discover</a></li>
       </ul>
@@ -23,11 +33,11 @@
 
   <main>
     <section class="hero">
-      <img src="images/hero-placeholder.jpg" alt="Chosica city view" />
+      <img src="images/hq720.jpg" alt="Chosica city view" />
       <button class="cta">Learn More</button>
     </section>
 
-    <h2>Home</h2>
+    <h2>Welcome to the Chamber</h2>
 
     <section class="info-section">
       <div class="events">
@@ -51,30 +61,30 @@
 
     <section class="business-section">
       <div class="business-card">
-        <img src="images/business1.jpg" alt="Business 1" />
-        <h4>Business Name</h4>
-        <p>Business Tag Line</p>
-        <p><strong>Email:</strong> info@gmail.com</p>
-        <p><strong>Phone:</strong> 800-555-1234</p>
-        <p><strong>URL:</strong> mybusiness.com</p>
+        <img src="images/l.jpg" alt="Business 1" />
+        <h4>Panadería El Sol</h4>
+        <p>Fresh bread and pastries every day!</p>
+        <p><strong>Email:</strong> elsolbakery@gmail.com</p>
+        <p><strong>Phone:</strong> (01) 555-1234</p>
+        <p><strong>URL:</strong> elsolbakery.com</p>
       </div>
 
       <div class="business-card">
-        <img src="images/business2.jpg" alt="Business 2" />
-        <h4>Business Name</h4>
-        <p>Business Tag Line</p>
-        <p><strong>Email:</strong> info@gmail.com</p>
-        <p><strong>Phone:</strong> 800-555-1234</p>
-        <p><strong>URL:</strong> mybusiness.com</p>
+        <img src="images/images.png" alt="Business 2" />
+        <h4>EcoLima Tours</h4>
+        <p>Discover nature with us.</p>
+        <p><strong>Email:</strong> info@ecolimatours.com</p>
+        <p><strong>Phone:</strong> (01) 555-5678</p>
+        <p><strong>URL:</strong> ecolimatours.com</p>
       </div>
 
       <div class="business-card">
-        <img src="images/business3.jpg" alt="Business 3" />
-        <h4>Business Name</h4>
-        <p>Business Tag Line</p>
-        <p><strong>Email:</strong> info@gmail.com</p>
-        <p><strong>Phone:</strong> 800-555-1234</p>
-        <p><strong>URL:</strong> mybusiness.com</p>
+        <img src="images/innova.jpg" alt="Business 3" />
+        <h4>InnovaTech Solutions</h4>
+        <p>Empowering local business with technology.</p>
+        <p><strong>Email:</strong> contact@innovatech.pe</p>
+        <p><strong>Phone:</strong> (01) 555-8900</p>
+        <p><strong>URL:</strong> innovatech.pe</p>
       </div>
     </section>
   </main>
@@ -88,15 +98,15 @@
     </div>
 
     <div class="social">
-      <a href="#"><img src="images/youtube-icon.png" alt="YouTube" /></a>
-      <a href="#"><img src="images/twitter-icon.png" alt="Twitter" /></a>
-      <a href="#"><img src="images/linkedin-icon.png" alt="LinkedIn" /></a>
+      <a href="#"><img src="images/174883.png" alt="YouTube" /></a>
+      <a href="#"><img src="images/gorjeo.png" alt="Twitter" /></a>
+      <a href="#"><img src="images/linkedin.webp" alt="LinkedIn" /></a>
     </div>
 
     <div class="project-info">
       <p>WDD231 Class Project</p>
       <p>By Bennett Scott</p>
-      <p>©2025 Chosica Chamber of Commerce</p>
+      <p>© <span id="currentYear"></span> Chosica Chamber of Commerce</p>
       <p id="lastModified"></p>
     </div>
   </footer>
