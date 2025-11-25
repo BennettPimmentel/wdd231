@@ -1,0 +1,35 @@
+#results { padding: 1rem; font-size: 1.2rem; }main {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.thankyou-box {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.thankyou-box h2 {
+  color: #0c5e69;
+}
+
+.btn-home {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  font-size: 1.1rem;
+  color: white;
+  background: #0c5e69;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.btn-home:hover {
+  background: #f5a623;
+  color: black;
+}

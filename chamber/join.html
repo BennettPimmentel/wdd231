@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join | Chosica Chamber of Commerce</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+
+<header>
+  <h1>Join the Chamber</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="directory.html">Directory</a></li>
+      <li><a href="join.html" class="active">Join</a></li>
+      <li><a href="discover.html">Discover</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h2>Membership Application</h2>
+
+  <form id="membershipForm">
+
+    <label>First Name *</label>
+    <input type="text" name="firstname" required />
+
+    <label>Last Name *</label>
+    <input type="text" name="lastname" required />
+
+    <label>Organization Title</label>
+    <input type="text" name="title" placeholder="Manager, Supervisor..." />
+
+    <label>Email *</label>
+    <input type="email" name="email" required />
+
+    <label>Phone *</label>
+    <input type="tel" name="phone" required />
+
+    <label>Business Name *</label>
+    <input type="text" name="business" required />
+
+    <label>Membership Level *</label>
+    <select name="membership" required>
+      <option value="">Select One</option>
+      <option value="np">NP Membership (Non-Profit)</option>
+      <option value="bronze">Bronze Membership</option>
+      <option value="silver">Silver Membership</option>
+      <option value="gold">Gold Membership</option>
+    </select>
+
+    <input type="hidden" name="timestamp" id="timestamp">
+
+    <button type="submit">Submit Application</button>
+  </form>
+
+  <section class="membership-info">
+    <h3>Membership Benefits</h3>
+
+    <p><strong>NP Membership:</strong> Free basic listing, community participation.</p>
+    <p><strong>Bronze:</strong> Directory listing + email support.</p>
+    <p><strong>Silver:</strong> All Bronze benefits + event invitations + promotions.</p>
+    <p><strong>Gold:</strong> All Silver benefits + premium advertising + featured business status.</p>
+  </section>
+</main>
+
+<footer>
+  <p>© <span id="currentYear"></span> Chosica Chamber of Commerce</p>
+  <p id="lastModified"></p>
+</footer>
+
+<link rel="stylesheet" href="styles/styles.css">
+<link rel="stylesheet" href="styles/join.css">
+</body>
+</html>
