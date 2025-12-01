@@ -1,49 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Discover | Chosica Chamber of Commerce</title>
-  <link rel="stylesheet" href="styles/styles.css" />
+
+
+  <link rel="stylesheet" href="styles/styles.css">
+
+
+  <link rel="stylesheet" href="styles/discover.css">
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<header>
-  <h1>Discover Chosica</h1>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="directory.html">Directory</a></li>
-      <li><a href="join.html">Join</a></li>
-      <li><a href="discover.html" class="active">Discover</a></li>
-    </ul>
-  </nav>
-</header>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Chosica Chamber</a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+        <a href="discover.html" class="active">Discover</a>
+      </nav>
+    </div>
+  </header>
 
-<main>
+  <main class="container">
+    <section class="hero">
+      <h1>Discover Chosica</h1>
+      <p>Explore local attractions, parks, cultural spots, and businesses that make Chosica special.</p>
+    </section>
 
-  <h2 id="visitMessage"></h2>
+    
+    <section id="visit-section" aria-live="polite" class="visit-section">
+      <p id="visitMessage" class="visit-message"></p>
+    </section>
 
-  <section>
-    <h3>About Chosica</h3>
-    <p>Chosica is known for its warm climate, beautiful parks, and welcoming community.</p>
-  </section>
+ 
+    <section class="about">
+      <h2>About Chosica</h2>
+      <p>Chosica is known for its pleasant climate, riverside views, and vibrant community life. Below are eight places to visit or support as a business member.</p>
+    </section>
 
-  <section class="gallery">
-    <h3>Gallery</h3>
-    <img src="images/hq720.jpg" alt="Chosica view">
-    <img src="images/chosi.jpg" alt="Local business">
-    <img src="images/chosi2.jpg" alt="Tech business">
-  </section>
+ 
+    <section id="discover-grid" class="discover-grid" aria-label="Places of interest">
 
-</main>
+    </section>
+  </main>
 
-<footer>
-  <p>© <span id="currentYear"></span> Chosica Chamber of Commerce</p>
-  <p id="lastModified"></p>
-</footer>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="currentYear"></span> Chosica Chamber of Commerce</p>
+      <p id="lastModified" class="last-modified"></p>
+    </div>
+  </footer>
 
-<link rel="stylesheet" href="styles/styles.css">
-<link rel="stylesheet" href="styles/discover.css">
+  <script type="module" src="js/discover.js"></script>
 </body>
 </html>
