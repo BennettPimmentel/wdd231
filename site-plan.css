@@ -1,0 +1,25 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FFFFFF;
+    color: #333333;
+    margin: 20px;
+}
+
+h1, h2 {
+    color: #FFAD60;
+}
+
+section {
+    margin-bottom: 25px;
+    background-color: #6A8E7F20;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.wireframe {
+    background-color: #FFFFFF;
+    border: 1px solid #6A8E7F;
+    padding: 10px;
+    font-family: monospace;
+    white-space: pre-wrap;
+}
