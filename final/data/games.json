@@ -1,0 +1,38 @@
+[
+    {
+        "title": "The Legend of Zelda: Breath of the Wild",
+        "genre": "Adventure",
+        "rating": 9.7,
+        "image": "images/3.jpg"
+    },
+    {
+        "title": "God of War",
+        "genre": "Action",
+        "rating": 9.5,
+        "image": "images/2.jpg"
+    },
+    {
+        "title": "Minecraft",
+        "genre": "Sandbox",
+        "rating": 9.0,
+        "image": "images/4.jpg"
+    },
+    {
+        "title": "Elden Ring",
+        "genre": "RPG",
+        "rating": 9.8,
+        "image": "images/6.avif"
+    },
+    {
+        "title": "Fortnite",
+        "genre": "Shooter / Battle Royale",
+        "rating": 8.7,
+        "image": "images/5.jpg"
+    },
+    {
+        "title": "Cyberpunk 2077",
+        "genre": "Open World RPG",
+        "rating": 8.6,
+        "image": "images/1.jpg"
+    }
+]

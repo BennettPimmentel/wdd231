@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact | Gaming Hub</title>
+  <meta name="description" content="Contact Gaming Hub — send feedback, suggestions or report a bug." />
+  <link rel="icon" href="favicon.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">Gaming<span>Hub</span></div>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="contact-wrapper container">
+    <section class="contact-grid" aria-labelledby="contact-title">
+      <div class="contact-card contact-details" role="region" aria-labelledby="contact-title">
+        <h1 id="contact-title">Get in Touch</h1>
+        <p>Questions, feedback, or a game we should review? Send us a message or join our community channels.</p>
+
+        <ul class="contact-list">
+          <li><strong>Email:</strong> <a href="mailto:support@gaminghub.com">support@gaminghub.com</a></li>
+          <li><strong>Discord:</strong> <span>GamingHubCommunity#2025</span></li>
+          <li><strong>Twitter:</strong> <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">@GamingHub</a></li>
+        </ul>
+
+        <figure class="contact-figure">
+          <img loading="lazy"
+               src="images/type.avif"
+               alt="Person typing on laptop with gaming imagery"
+               class="contact-img">
+          <figcaption class="visually-hidden">Contact image</figcaption>
+        </figure>
+      </div>
+
+      <div class="contact-card contact-form-card" role="form" aria-labelledby="form-title">
+        <h2 id="form-title">Send a Message</h2>
+
+        <form class="contact-form" action="form-action.html" method="get" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required autocomplete="name">
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required autocomplete="email">
+
+          <label for="subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="Game suggestion, feedback..." >
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+
+          <div class="form-row">
+            <button type="submit" class="btn">Send Message</button>
+            <button type="reset" class="btn alt">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; <span id="year2"></span> Gaming Hub — All rights reserved.</div>
+  </footer>
+
+  <script>document.getElementById('year2').textContent = new Date().getFullYear();</script>
+</body>
+</html>

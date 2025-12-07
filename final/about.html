@@ -1,0 +1,84 @@
+\<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About | Gaming Hub</title>
+  <meta name="description" content="About Gaming Hub — curated game picks, genres and community." />
+  <link rel="icon" href="favicon.svg" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">Gaming<span>Hub</span></div>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="about-wrapper container">
+    <section class="about-hero" aria-labelledby="about-title">
+      <div class="about-hero-text">
+        <h1 id="about-title">About Gaming Hub</h1>
+        <p>We are a small team of gamers who love discovering great titles — from indie gems to AAA experiences. We curate, explain and highlight games so you can find something you'll love.</p>
+      </div>
+      <figure class="about-hero-figure" aria-hidden="false">
+        <img loading="lazy"
+             src="images/set.jpg"
+             alt="Stylish gaming setup with RGB lighting"
+             class="about-hero-img">
+        <figcaption class="visually-hidden">Gaming setup with RGB lighting</figcaption>
+      </figure>
+    </section>
+
+    <section class="about-grid" aria-labelledby="mission-title">
+      <div class="about-card">
+        <h2 id="mission-title">Our Mission</h2>
+        <p>To help players explore, learn and connect through curated recommendations and clear, friendly content about games and genres.</p>
+      </div>
+
+      <div class="about-card">
+        <h2>What We Offer</h2>
+        <ul>
+          <li>Curated lists and picks</li>
+          <li>Genre guides and quick explainers</li>
+          <li>Game gallery & recommendations</li>
+          <li>Beginner-friendly writing</li>
+        </ul>
+      </div>
+
+      <div class="about-card media-card">
+        <h2>Community & Coverage</h2>
+        <p>We cover games across platforms — PC, consoles, and mobile. We highlight hidden gems and show you where to start.</p>
+        <img loading="lazy"
+             src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=900&q=60&auto=format&fit=crop"
+             alt="Group of friends playing games together"
+             class="about-img">
+      </div>
+
+      <div class="about-card media-card">
+        <h2>How We Work</h2>
+        <p>We gather data, play, and write short, helpful descriptions. We also provide rating, platform and release information for each game.</p>
+        <img loading="lazy"
+             src="https://images.unsplash.com/photo-1605902711622-cfb43c44367e?w=900&q=60&auto=format&fit=crop"
+             alt="Console controller and game case on table"
+             class="about-img">
+      </div>
+    </section>
+
+    <section class="about-cta">
+      <h3>Want More?</h3>
+      <p>Check the <a href="index.html#games-container">Featured Games</a> section or send us suggestions on the contact page.</p>
+      <a class="btn" href="contact.html">Contact Us</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; <span id="year"></span> Gaming Hub — All rights reserved.</div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

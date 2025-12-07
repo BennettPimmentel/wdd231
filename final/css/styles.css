@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: #0d0d0d;
+    color: #f2f2f2;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #111;
+    border-bottom: 2px solid #ff4444;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo span {
+    color: #ff4444;
+}
+
+nav a {
+    margin-left: 15px;
+    text-decoration: none;
+    color: #ccc;
+    font-weight: 500;
+}
+
+nav a.active, nav a:hover {
+    color: #ff4444;
+}
+
+.hero {
+    background-image: url("../images/fondo.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.45); 
+    z-index: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff0040;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #ff3366;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #ff4444;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff2222;
+}
+
+.categories {
+    padding: 40px 20px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.category-card {
+    height: 180px;
+    border-radius: 12px;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.category-card .overlay {
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s;
+}
+
+.category-card:hover .overlay {
+    background: rgba(0,0,0,0.8);
+}
+
+.category-card h3 {
+    font-size: 24px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    background: #1a1a1a;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(255,68,68,0.3);
+    transition: transform .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.gallery-grid {
+    display: grid;
+    gap: 12px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.04);
+}
+
+.content {
+    padding: 40px 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #111;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.main-header { z-index: 10; }
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+
+.about-wrapper { padding: 2rem 1rem 3rem; }
+.about-hero {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.about-hero-text h1 { font-size: 2rem; margin: 0 0 .5rem; color: #fff; }
+.about-hero-text p { color: #cbd5e1; margin: 0; }
+
+.about-hero-figure { display:flex; align-items:center; justify-content:center; }
+.about-hero-img {
+  width:100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.about-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding: 1rem;
+  border-radius: 10px;
+  color: #e6eef8;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+}
+.media-card .about-img {
+  width:100%;
+  height:160px;
+  object-fit:cover;
+  margin-top: .75rem;
+  border-radius:8px;
+}
+
+.about-cta { text-align:center; padding: 1.5rem 0; }
+.about-cta p { color: #cbd5e1; }
+
+.contact-wrapper { padding: 2rem 1rem 3rem; }
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 520px;
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.contact-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+}
+
+.contact-details p, .contact-list { color: #cbd5e1; margin: 0 0 .5rem; }
+.contact-list { list-style: none; padding: 0; margin: .5rem 0 0; }
+.contact-list li { margin-bottom: .5rem; }
+
+.contact-figure { margin-top: .75rem; }
+.contact-img { width:100%; height:180px; object-fit:cover; border-radius:8px; }
+
+.contact-form { display:flex; flex-direction:column; gap:0.6rem; }
+.contact-form label { font-size: .95rem; color: #e6eef8; }
+.contact-form input, .contact-form textarea {
+  padding: .6rem .8rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.02);
+  color: #fff;
+  font-size: 1rem;
+}
+.form-row { display:flex; gap:.6rem; margin-top:.5rem; }
+.btn.alt { background: transparent; border: 1px solid rgba(255,255,255,0.06); color: #fff; }
+
+@media (max-width: 900px) {
+  .about-hero { grid-template-columns: 1fr; }
+  .about-grid { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .about-hero-figure { order: -1; margin-bottom: 1rem; }
+  .about-hero-img { max-height: 220px; }
+}
